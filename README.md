@@ -25,6 +25,7 @@ A merge sort is a divide and conquer algorithm. This means that is a recursive p
 3. Repeated on sub parts until solution is found
 
 **time complexity**
+List gets partitioned logn times and partition occurs in linear time.
 
 //TODO
 - insertion sort
