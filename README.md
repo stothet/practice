@@ -31,3 +31,14 @@ List gets partitioned logn times and partition occurs in linear time.
 - insertion sort
 - radix sort
 - count sort
+
+## binary search
+For a function `f(x) = y`, if y increases/decreases for increasing/decreasing (resp) values of x it is said to be monotonic.
+
+Consider a sorted array. The array acts like a function f(i) which maps indices to values. Sometimes we want to find the index of a certain value in the array. In other words, for a given v, we want to know the i such that 
+
+`f(i) = v`
+
+Since the array is sorted/monotonic we can use binary search.
+
+Let `start` be the start index of the search window and `end` be the end index. The loop invariant is that `f(start) <= v <= f(end)`, or that v is inside the window bound by start and end.
